@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #204f87;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #052244; 
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.banner h1{
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+.hg{
+    align-items: center;
+    height: 90vh;
+}
+.icon{
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    top: 50;
+    top: 75%;
+    color: #fff;
+    font-size: 30px;
+    transform: translateX(-50%);
+    animation: updown 1.5s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        top: 65%; 
+    }
+    100%{
+        top: 75%;
+    }
+}
+.who-we-are{
+
+}
+.who-we-are span{
+    
+display: inline-block;
+    
+height: 5px;
+    
+width: 0px;
+    
+background-color: #f6594d;
+transition: .5s ease-in-out;
+}
+.who-we-are h1{
+    
+color: #204f87;
+font-size: 40px;
+}
+.who-we-are p{
+    
+color: #b0b0b1;
+}
+.who-we-are:hover span{
+    width: 50px;
+}
+.what-we-do{
+    background-color: #f7f8f8;
+    background-image: url(../images/what-we-do-bg.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 1039px;
+}
+.what-we-do:hover .heading span{
+ width: 50px;
+}
+.heading{
+    
+}
+.heading span{
+display: inline-block;
+    
+height: 5px;
+    
+width: 0px;
+    
+background-color: #f6594d;
+display: block;
+margin: auto;
+transition: .5s all ease-in-out;
+}
+.heading h1{
+    text-align: center;
+    color: #204f87;
+font-size: 40px;
+text-transform: uppercase;
+}
+.image{
+    position: relative;
+}
+.image::before{
+    position: absolute;
+    content: '';
+    height: 0%;
+    width: 100%;
+    left: 0;
+   bottom: 0;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,204f87+48,204f87+86&0+5,1+60 */
+background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(115,174,222,0) 5%, rgba(32,79,135,0.78) 48%, rgba(32,79,135,1) 60%, rgba(32,79,135,1) 86%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(115,174,222,0) 5%,rgba(32,79,135,0.78) 48%,rgba(32,79,135,1) 60%,rgba(32,79,135,1) 86%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(115,174,222,0) 5%,rgba(32,79,135,0.78) 48%,rgba(32,79,135,1) 60%,rgba(32,79,135,1) 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#204f87',GradientType=0 ); /* IE6-9 */
+transition: .5s all ease-in-out;
+    opacity: .5;
+}
+.image:hover::before{
+    height: 100%;
+}
+.text{
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+opacity: 0;
+}
+.text h1{
+    color: #fff;
+    font-size: 30px;
+}
+.image:hover .text{
+    opacity: 1;
+}
+.image-icon{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 30px;
+}
+.attorney-section{
+    background-image: url(../images/attorney-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+.attorney-section span{
+    width: 0px;
+    height: 5px;
+    display: block;
+    background-color: #f6594d;
+    transition: .5s all ease-in-out;
+}
+.attorney-section h1{
+    color: #fff;
+    font-size: 30px;
+}
+.attorney-section p{
+    color: #929dcf;
+}
+.attorney-section a{
+    color: #f2622c;
+    text-decoration: none;
+}
+.attorney-section:hover span{
+    width: 50px;
+}
+.designation{
+    
+position: absolute;
+    
+left: 20%;
+    
+top: 80%;
+  opacity: 0;  
+color: #fff;
+transition: .5s all ease-in-out;
+}
+.image:hover .designation{
+    top: 70%;
+    opacity: 1; 
+}
+.language:hover .heading span{
+    width: 50px;
+}
+.language{
+
+}
+.language h2{
+    text-transform: uppercase;
+    color: #28377e;
+}
+.language p{
+    color: #b1b0b1;
+}
+.language a{
+    color: #f2622c;
+    text-decoration: none;
+}
+.contact{
+    background-color: #28377e;
+}
+.form{
+
+}
+form input{
+background: transparent !important;
+border: none !important;
+border-bottom: 1px solid #b1b0b1 !important;
+border-radius: 0 !important;
+caret-color: tomato !important;
+}
+form textarea{
+    background: transparent !important;
+border: none !important;
+border-bottom: 1px solid #b1b0b1 !important;
+border-radius: 0 !important;
+caret-color: tomato !important;
+}
+form input::placeholder{
+    color: #fff !important;
+}
+form textarea::placeholder{
+    color: #fff !important;
+}
+form input[type="submit"]{
+    border: none !important;
+    color: #fff;
+    background-color: #f2622c !important;
+    padding: 10px 60px;
+    border: 1px solid #f2622c !important;
+    transition: .5s all ease-in-out;
+}
+form input[type="submit"]:hover{
+    background-color: transparent !important;
+}
+form input:focus{
+    box-shadow: none !important;
+}
+form textarea:focus{
+    box-shadow: none !important;
+}
+.contact .heading h1{
+    color: #fff;
+}
+.contact:hover .heading span{
+    width: 50px;
+}
+.footer{
+    background-color: #0c1234;
+}
+.footer h6{
+    color: #616ca8;
+}
+.footer ul{
+    list-style: none;
+    overflow: hidden;
+}
+.footer ul li{
+    color: #fff;
+    float: left;
+
+
+}
+.footer i{
+
+}
